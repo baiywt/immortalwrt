@@ -139,6 +139,15 @@ define Device/friendlyarm_nanopi-r5c
 endef
 TARGET_DEVICES += friendlyarm_nanopi-r5c
 
+define Device/xunlong_orangepi-3b
+  DEVICE_VENDOR := Xunlong
+  DEVICE_MODEL := Orange Pi 3b
+  SOC := rk3566
+  BOOT_FLOW := pine64-img
+  DEVICE_PACKAGES := kmod-r8125 kmod-brcmfmac
+endef
+TARGET_DEVICES += xunlong_orangepi-3b
+
 define Device/friendlyarm_nanopi-r5s
   DEVICE_VENDOR := FriendlyARM
   DEVICE_MODEL := NanoPi R5S

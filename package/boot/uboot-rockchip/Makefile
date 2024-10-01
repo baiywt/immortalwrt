@@ -177,6 +177,13 @@ define U-Boot/mrkaio-m68s-rk3568
     ezpro_mrkaio-m68s
 endef
 
+define U-Boot/orangepi-3b-rk3566
+  $(U-Boot/rk3568/Default)
+  NAME:=Orange Pi 3B
+  BUILD_DEVICES:= \
+    xunlong_orangepi-3b
+endef
+
 define U-Boot/nanopi-r5c-rk3568
   $(U-Boot/rk3568/Default)
   NAME:=NanoPi R5C
@@ -233,6 +240,7 @@ UBOOT_TARGETS := \
   mrkaio-m68s-rk3568 \
   nanopi-r5c-rk3568 \
   nanopi-r5s-rk3568 \
+  orangepi-3b-rk3566 \
   photonicat-rk3568 \
   roc-pc-rk3568 \
   sige3-rk3568
